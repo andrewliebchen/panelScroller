@@ -2,6 +2,7 @@
 
 var React = require('react/addons');
 var _ = require('lodash');
+var $ = require('jquery');
 
 var ReactTransitionGroup = React.addons.TransitionGroup;
 
@@ -56,6 +57,13 @@ var PanelScrollerApp = React.createClass({
         <aside className="sidebar-wrapper">Sidebar</aside>
       </div>
     );
+  },
+
+  componentDidMount: function() {
+    $(window).scroll(function(){
+      var scrollPos = $(window).scrollTop() - 40;
+      $('.table-container').css({'height': scrollPos});
+    });
   }
 });
 React.render(<PanelScrollerApp />, document.getElementById('content')); // jshint ignore:line
