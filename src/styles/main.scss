@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.graph-wrapper {
+  height: 100vh;
+  padding: 1em 1em 1em 20vw;
+}
+
+.table-wrapper {
+  height: 100vh;
+  margin-left: 20vw;
+  width: 80vw;
+  background-color: #f0f0f0;
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+
+.table-container {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  right: 2em;
+  bottom: 2em;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+}
+
+.table {
+  width: 150vw;
+  background-color: white;
+}
+
+.footer-wrapper {
+  background-color: #ccc;
+  padding: 1em;
+  height: 25vh;
+  padding: 1em 1em 1em 20vw;
+}
+
+.sidebar-wrapper {
+  position: fixed;
+  border-right: 1px solid #ccc;
+  width: 20vw;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 1em;
+}
