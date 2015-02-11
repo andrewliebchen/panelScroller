@@ -53,7 +53,6 @@ var PanelScrollerApp = React.createClass({
       <div className="main">
         <section className="graph-wrapper">Graph</section>
         <Table />
-        <footer className="footer-wrapper">Footer</footer>
         <aside className="sidebar-wrapper">Sidebar</aside>
       </div>
     );
